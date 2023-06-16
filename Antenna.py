@@ -23,6 +23,8 @@ class Receiver(Antenna):
         self.y = y
         self.z = z
         self.number = number
+        self.time_received = 0
+        self.event_radius = 0
         self.type = "Receiver"
 
 
