@@ -17,3 +17,5 @@ S
 Q.idea/sonarlint/securityhotspotstore/5/b/5b9643de14e273ce5b43021c1fd5aea6604cbfd8,7\d\7de8944811ea720b31b607674725d1bca40737cd
 8
 KReco.py,4\8\480cef145acd40fbf0fc29963748c2d4bd71dac7
+8
+Kdoit.py,5\a\5a00973b546ab4fb0a17e5ddf2d00fe3028f90d0
