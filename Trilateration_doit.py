@@ -1,6 +1,6 @@
 from random import randrange
 from Antenna import Transmitter, Receiver
-import DReco
+import Trilateration_reco
 
 import matplotlib
 # matplotlib.use('TkAgg',force=True)
@@ -10,9 +10,8 @@ import numpy as np
 import math
 
 #TODO: rewrite all functions to just use an RX array
-#TODO: retool code to use delta_t instead of time from 0
+#should also retool code to use delta_t instead of time from 0 but KReco does this
 
-# TX1 = Transmitter(0, 0, 10, '1')
 TX2 = Transmitter(-70, 50, 10, '2')
 
 RX1 = Receiver(0, 30, 10, '1')
@@ -21,7 +20,7 @@ RX3 = Receiver(-(15 * math.sqrt(3)), -15, 10, '3')
 
 RXs = [RX1, RX2, RX3]
 
-c =  c = 299792
+c = 299792
 
 if __name__ == '__main__':
     # start_time = randrange(0, 100)
@@ -30,7 +29,6 @@ if __name__ == '__main__':
     error2 = randrange(-100, 100) / 10000000
     error3 = randrange(-100, 100) / 10000000
     print(f"Error values: {error1}, {error2}, {error3}")
-    # error = 0
 
     # time from transmission to reception
     RX1.time_received = TX2.transmit(RX1, c) + start_time + error1
@@ -44,7 +42,6 @@ if __name__ == '__main__':
 
     fig = plt.figure(figsize=(8, 8))
 
-    # ax = fig.add_subplot(111, projection='3d')
     ax = fig.add_subplot(111)
     # set axes to be 200m x 200m
     ax.set_xlim(-150, 150)
@@ -68,7 +65,7 @@ if __name__ == '__main__':
     ax.plot(x2, y2, c='g')
     ax.plot(x3, y3, c='r')
 
-    intersect = DReco.best_intersection(RX1, RX2, RX3, c, ax)
+    intersect = DReco.best_intersection(RX1, RX2, RX3, c)
     ax.scatter(intersect[0][0], intersect[0][1], c='g', marker='X')
     ax.scatter(intersect[1][0], intersect[1][1], c='g', marker='X')
     ax.scatter(intersect[2][0], intersect[2][1], c='g', marker='X')
