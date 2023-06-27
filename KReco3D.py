@@ -24,13 +24,40 @@ def seconds_to_nanoseconds(seconds):
 def points_to_phi_theta(point):
     # calculates phi and theta from points relative to the origin
     #Make sure that the array center is (0,0,0)!
-    phi = np.arctan2(point[1], point[0])
-    theta = np.arctan2(point[2], np.sqrt(point[0]**2 + point[1]**2))
+    try:
+        phi = np.arctan2(point[1], point[0])
+    except:
+        print(f"Error in points_to_phi_theta: {point}", sep=" ")
+        phi = 0
+    try:
+        theta = np.arctan2(point[2], np.sqrt(point[0]**2 + point[1]**2))
+    except:
+        print(f"Error in points_to_phi_theta: {point}", sep=" ")
+        theta = 0
     return phi, theta
 
 
+def circle_plotter_time(time, resolution, posit, c):
+    radius = time * c
+    theta = np.linspace(0, 2 * np.pi, resolution)
+    x = radius * np.cos(theta) + posit.x
+    y = radius * np.sin(theta) + posit.y
+    z = posit.z
+    print(f"radius: {radius}")
+    return x, y, z
+
+
+def circle_plotter_radius(radius, resolution, x, y, z):
+    theta = np.linspace(0, 2 * np.pi, resolution)
+    x = radius * np.cos(theta) + x
+    y = radius * np.sin(theta) + y
+    # z = z
+    print(f"radius: {radius}")
+    return x, y, z
+
 
 def send_it(RX1, RX2, RX3, RX4, c, infile, printout=False):
+    good = True
     #generate a random transmitter location for TX2
     TX = Transmitter(randrange(-1000, 1000), randrange(-1000, 1000), randrange(-1000, 1000), 1)
     # TX = Transmitter(100, 100, 50, '2')
@@ -87,6 +114,8 @@ def send_it(RX1, RX2, RX3, RX4, c, infile, printout=False):
 
     sol_phi, sol_theta = points_to_phi_theta(solution)  # returns phi and theta in radians
     #this is relative to the origin! Make sure that the array center is (0,0,0)
+    if sol_phi == 0 or sol_theta == 0:
+        good = False
     sol_phi_deg = np.degrees(sol_phi)  # convert to degrees. This is the azimuthal angle
     sol_theta_deg = np.degrees(sol_theta)  # convert to degrees. This is the polar angle
 
@@ -94,52 +123,65 @@ def send_it(RX1, RX2, RX3, RX4, c, infile, printout=False):
     act_phi_deg = np.degrees(act_phi)  # convert to degrees
     act_theta_deg = np.degrees(act_theta)  # convert to degrees
 
-    err_phi, err_theta = np.absolute(sol_phi - act_phi), np.absolute(sol_theta - act_theta)  # returns phi and theta error in radians
+    # err_phi, err_theta = np.absolute(sol_phi - act_phi), np.absolute(sol_theta - act_theta)  # returns phi and theta error in radians
+    err_phi, err_theta = sol_phi - act_phi, sol_theta - act_theta  # returns phi and theta error in radians
     err_phi_deg, err_theta_deg = np.degrees(err_phi), np.degrees(err_theta)  # convert to degrees
 
     #if the file exists, then append the data to the file, if not, create it and write the data
     if os.path.isfile(infile):
         with open(infile, 'a') as f:
-            f.write(
-                f"t_start: {t_start_sec}ns\nerror1: {error1_sec}ns\nerror2: "
-                f"{error2_sec}ns\nerror3: {error3_sec}ns\nerror4: {error4_sec}ns\n"
-                f"TX2toRX1_actual: {TX2toRX1_actual_sec - t_start_sec}ns\n"
-                f"TX2toRX2_actual: {TX2toRX2_actual_sec - t_start_sec}ns\n"
-                f"TX2toRX3_actual: {TX2toRX3_actual_sec - t_start_sec}ns\n"
-                f"TX2toRX4_actual: {TX2toRX4_actual_sec - t_start_sec}ns\n"
-                f"Solution:\t({solution[0]:10.3f}, {solution[1]:10.3f}, {solution[2]:10.3f}    )\n"
-                f"Actual:\t\t({float(TX.x):10.3f}, {float(TX.y):10.3f}, {float(TX.z):10.3f}    )\n"
-                f"Error:\t\t({solution_error[0]:10.3f}, {solution_error[1]:10.3f}, {solution_error[2]:10.3f}    )\n"
-                f"Error distance: {np.linalg.norm(solution_error)} meters\n"
-                f"Solution Phi, Theta:\t\t({sol_phi:10.3f}, {sol_theta:10.3f}     )\n"
-                f"Actual Phi, Theta:\t\t({act_phi:10.3f}, {act_theta:10.3f}     )\n"
-                f"Solution Phi, Theta (deg):\t({sol_phi_deg:10.3f}, {sol_theta_deg:10.3f}     )\n"
-                f"Actual Phi, Theta (deg):\t({act_phi_deg:10.3f}, {act_theta_deg:10.3f}     )\n"
-                f"Error Phi, Theta:\t\t({err_phi:10.3f}, {err_theta:10.3f}     )\n"
-                f"Error Phi, Theta (deg):\t\t({err_phi_deg:10.3f}, {err_theta_deg:10.3f}     )\n"
-                f"\n--------------------------------------------------\n\n")
-            f.close()
+            if good:
+                f.write(
+                    f"t_start: {t_start_sec}ns\nerror1: {error1_sec}ns\nerror2: "
+                    f"{error2_sec}ns\nerror3: {error3_sec}ns\nerror4: {error4_sec}ns\n"
+                    f"TX2toRX1_actual: {TX2toRX1_actual_sec - t_start_sec}ns\n"
+                    f"TX2toRX2_actual: {TX2toRX2_actual_sec - t_start_sec}ns\n"
+                    f"TX2toRX3_actual: {TX2toRX3_actual_sec - t_start_sec}ns\n"
+                    f"TX2toRX4_actual: {TX2toRX4_actual_sec - t_start_sec}ns\n"
+                    f"Solution:\t({solution[0]:10.3f}, {solution[1]:10.3f}, {solution[2]:10.3f}    )\n"
+                    f"Actual:\t\t({float(TX.x):10.3f}, {float(TX.y):10.3f}, {float(TX.z):10.3f}    )\n"
+                    f"Error:\t\t({solution_error[0]:10.3f}, {solution_error[1]:10.3f}, {solution_error[2]:10.3f}    )\n"
+                    f"Error distance: {np.linalg.norm(solution_error)} meters\n"
+                    f"Solution Phi, Theta:\t\t({sol_phi:10.3f}, {sol_theta:10.3f}     )\n"
+                    f"Actual Phi, Theta:\t\t({act_phi:10.3f}, {act_theta:10.3f}     )\n"
+                    f"Solution Phi, Theta (deg):\t({sol_phi_deg:10.3f}, {sol_theta_deg:10.3f}     )\n"
+                    f"Actual Phi, Theta (deg):\t({act_phi_deg:10.3f}, {act_theta_deg:10.3f}     )\n"
+                    f"Error Phi, Theta:\t\t({err_phi:10.3f}, {err_theta:10.3f}     )\n"
+                    f"Error Phi, Theta (deg):\t\t({err_phi_deg:10.3f}, {err_theta_deg:10.3f}     )\n"
+                    f"\n--------------------------------------------------\n\n")
+                f.close()
+            else:
+                f.write(
+                    "Bad run due to timing error. No solution found.\n"
+                    f"\n--------------------------------------------------\n\n")
+                f.close()
     else:
         with open(infile, 'w') as f:
-            f.write(
-                f"t_start: {t_start_sec}ns\nerror1: {error1_sec}ns\nerror2: "
-                f"{error2_sec}ns\nerror3: {error3_sec}ns\nerror4: {error4_sec}ns\n"
-                f"TX2toRX1_actual: {TX2toRX1_actual_sec - t_start_sec}ns\n"
-                f"TX2toRX2_actual: {TX2toRX2_actual_sec - t_start_sec}ns\n"
-                f"TX2toRX3_actual: {TX2toRX3_actual_sec - t_start_sec}ns\n"
-                f"TX2toRX4_actual: {TX2toRX4_actual_sec - t_start_sec}ns\n"
-                f"Solution:\t({solution[0]:10.3f}, {solution[1]:10.3f}, {solution[2]:10.3f}    )\n"
-                f"Actual:\t\t({float(TX.x):10.3f}, {float(TX.y):10.3f}, {float(TX.z):10.3f}    )\n"
-                f"Error:\t\t({solution_error[0]:10.3f}, {solution_error[1]:10.3f}, {solution_error[2]:10.3f}    )\n"
-                f"Error distance: {np.linalg.norm(solution_error)} meters\n"
-                f"Solution Phi, Theta:\t\t({sol_phi:10.3f}, {sol_theta:10.3f}     )\n"
-                f"Actual Phi, Theta:\t\t({act_phi:10.3f}, {act_theta:10.3f}     )\n"
-                f"Solution Phi, Theta (deg):\t({sol_phi_deg:10.3f}, {sol_theta_deg:10.3f}     )\n"
-                f"Actual Phi, Theta (deg):\t({act_phi_deg:10.3f}, {act_theta_deg:10.3f}     )\n"
-                f"Error Phi, Theta:\t\t({err_phi:10.3f}, {err_theta:10.3f}     )\n"
-                f"Error Phi, Theta (deg):\t\t({err_phi_deg:10.3f}, {err_theta_deg:10.3f}     )\n"
-                f"\n--------------------------------------------------\n\n")
-            f.close()
+            if good:
+                f.write(
+                    f"t_start: {t_start_sec}ns\nerror1: {error1_sec}ns\nerror2: "
+                    f"{error2_sec}ns\nerror3: {error3_sec}ns\nerror4: {error4_sec}ns\n"
+                    f"TX2toRX1_actual: {TX2toRX1_actual_sec - t_start_sec}ns\n"
+                    f"TX2toRX2_actual: {TX2toRX2_actual_sec - t_start_sec}ns\n"
+                    f"TX2toRX3_actual: {TX2toRX3_actual_sec - t_start_sec}ns\n"
+                    f"TX2toRX4_actual: {TX2toRX4_actual_sec - t_start_sec}ns\n"
+                    f"Solution:\t({solution[0]:10.3f}, {solution[1]:10.3f}, {solution[2]:10.3f}    )\n"
+                    f"Actual:\t\t({float(TX.x):10.3f}, {float(TX.y):10.3f}, {float(TX.z):10.3f}    )\n"
+                    f"Error:\t\t({solution_error[0]:10.3f}, {solution_error[1]:10.3f}, {solution_error[2]:10.3f}    )\n"
+                    f"Error distance: {np.linalg.norm(solution_error)} meters\n"
+                    f"Solution Phi, Theta:\t\t({sol_phi:10.3f}, {sol_theta:10.3f}     )\n"
+                    f"Actual Phi, Theta:\t\t({act_phi:10.3f}, {act_theta:10.3f}     )\n"
+                    f"Solution Phi, Theta (deg):\t({sol_phi_deg:10.3f}, {sol_theta_deg:10.3f}     )\n"
+                    f"Actual Phi, Theta (deg):\t({act_phi_deg:10.3f}, {act_theta_deg:10.3f}     )\n"
+                    f"Error Phi, Theta:\t\t({err_phi:10.3f}, {err_theta:10.3f}     )\n"
+                    f"Error Phi, Theta (deg):\t\t({err_phi_deg:10.3f}, {err_theta_deg:10.3f}     )\n"
+                    f"\n--------------------------------------------------\n\n")
+                f.close()
+            else:
+                f.write(
+                    "Bad run due to timing error. No solution found.\n"
+                    f"\n--------------------------------------------------\n\n")
+                f.close()
 
     return TX, solution, solution_error, err_phi_deg, err_theta_deg
     # return 1 is the event as a Transmitter object
@@ -174,9 +216,7 @@ class Vertexer:
         C = np.linalg.solve(A, np.ones(4))
         D = np.linalg.solve(A, b)
 
-        roots = np.roots([lorentz(C, C),
-                          (lorentz(C, D) - 1) * 2,
-                          lorentz(D, D)])
+        roots = np.roots([lorentz(C, C), (lorentz(C, D) - 1) * 2,lorentz(D, D)])
 
         solutions = []
         for root in roots:

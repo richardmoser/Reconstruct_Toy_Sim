@@ -1,0 +1,660 @@
+t_start: 517.0ns
+error1: 1.6509401470043015ns
+error2: -6.93605780189574ns
+error3: 3.408452314893404ns
+error4: 2.917654055121615ns
+TX2toRX1_actual: 1971671.5706101956ns
+TX2toRX2_actual: 1996384.4166455306ns
+TX2toRX3_actual: 1914485.492246724ns
+TX2toRX4_actual: 1958592.4008580535ns
+Solution:	(  -277.410,    -62.116,   -504.842    )
+Actual:		(  -277.000,    -62.000,   -504.000    )
+Error:		(    -0.410,     -0.116,     -0.842    )
+Error distance: 0.9433151509902156 meters
+Solution Phi, Theta:		(    -2.921,     -1.058     )
+Actual Phi, Theta:		(    -2.921,     -1.058     )
+Solution Phi, Theta (deg):	(  -167.379,    -60.616     )
+Actual Phi, Theta (deg):	(  -167.384,    -60.612     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.005,      0.004     )
+
+--------------------------------------------------
+
+t_start: 255.0ns
+error1: -8.246449044487914ns
+error2: -4.758547231530585ns
+error3: -4.991230899268628ns
+error4: -12.41045434658895ns
+TX2toRX1_actual: 3450330.421371383ns
+TX2toRX2_actual: 3577788.471793099ns
+TX2toRX3_actual: 3455471.115030622ns
+TX2toRX4_actual: 3493593.629728724ns
+Solution:	(  -738.963,    461.870,   -558.019    )
+Actual:		(  -744.000,    465.000,   -562.000    )
+Error:		(     5.037,     -3.130,      3.981    )
+Error distance: 7.142730446409771 meters
+Solution Phi, Theta:		(     2.583,     -0.570     )
+Actual Phi, Theta:		(     2.583,     -0.570     )
+Solution Phi, Theta (deg):	(   147.994,    -32.633     )
+Actual Phi, Theta (deg):	(   147.995,    -32.642     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.001,      0.008     )
+
+--------------------------------------------------
+
+t_start: 875.0ns
+error1: -18.823095349576043ns
+error2: -3.9026591027007296ns
+error3: 1.46484147158755ns
+error4: -2.1956996150553523ns
+TX2toRX1_actual: 3588542.836886705ns
+TX2toRX2_actual: 3681144.6774170045ns
+TX2toRX3_actual: 3543012.3215412293ns
+TX2toRX4_actual: 3603302.2121167025ns
+Solution:	(  -867.522,    175.023,   -619.346    )
+Actual:		(  -863.000,    174.000,   -616.000    )
+Error:		(    -4.522,      1.023,     -3.346    )
+Error distance: 5.717744986174753 meters
+Solution Phi, Theta:		(     2.943,     -0.611     )
+Actual Phi, Theta:		(     2.943,     -0.611     )
+Solution Phi, Theta (deg):	(   168.594,    -34.985     )
+Actual Phi, Theta (deg):	(   168.601,    -34.981     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.007,      0.004     )
+
+--------------------------------------------------
+
+t_start: 989.0ns
+error1: -2.1077304951537226ns
+error2: -11.160094640145765ns
+error3: 17.542669936165613ns
+error4: 17.026529175555254ns
+TX2toRX1_actual: 3819601.667054002ns
+TX2toRX2_actual: 3840457.349019351ns
+TX2toRX3_actual: 3948824.397749637ns
+TX2toRX4_actual: 3868748.3775142403ns
+Solution:	(   743.162,    591.410,    711.192    )
+Actual:		(   730.000,    581.000,    699.000    )
+Error:		(    13.162,     10.410,     12.192    )
+Error distance: 20.742341360770425 meters
+Solution Phi, Theta:		(     0.672,      0.643     )
+Actual Phi, Theta:		(     0.672,      0.643     )
+Solution Phi, Theta (deg):	(    38.513,     36.826     )
+Actual Phi, Theta (deg):	(    38.516,     36.841     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.003,      0.015     )
+
+--------------------------------------------------
+
+t_start: 560.0ns
+error1: 8.69985960313084ns
+error2: -2.0595783896071334ns
+error3: 5.552665265066968ns
+error4: 3.802611157264919ns
+TX2toRX1_actual: 3244083.417072097ns
+TX2toRX2_actual: 3351424.6081015565ns
+TX2toRX3_actual: 3180963.177925239ns
+TX2toRX4_actual: 3258046.9209186784ns
+Solution:	(  -962.728,    150.920,    -52.756    )
+Actual:		(  -963.000,    151.000,    -52.000    )
+Error:		(     0.272,     -0.080,     -0.756    )
+Error distance: 0.807591516208501 meters
+Solution Phi, Theta:		(     2.986,     -0.054     )
+Actual Phi, Theta:		(     2.986,     -0.053     )
+Solution Phi, Theta (deg):	(   171.091,     -3.099     )
+Actual Phi, Theta (deg):	(   171.088,     -3.054     )
+Error Phi, Theta:		(     0.000,      0.001     )
+Error Phi, Theta (deg):		(     0.002,      0.045     )
+
+--------------------------------------------------
+
+t_start: 76.0ns
+error1: 4.109306006408058ns
+error2: 1.1703317634152415ns
+error3: -5.240274215609975ns
+error4: -6.661472936981291ns
+TX2toRX1_actual: 2241201.689608257ns
+TX2toRX2_actual: 2169731.2874297095ns
+TX2toRX3_actual: 2075767.1329261232ns
+TX2toRX4_actual: 2160978.6687198463ns
+Solution:	(  -343.131,   -511.272,    199.871    )
+Actual:		(  -345.000,   -514.000,   -181.000    )
+Error:		(     1.869,      2.728,    380.871    )
+Error distance: 380.885697773856 meters
+Solution Phi, Theta:		(    -2.162,      0.314     )
+Actual Phi, Theta:		(    -2.162,     -0.284     )
+Solution Phi, Theta (deg):	(  -123.867,     17.984     )
+Actual Phi, Theta (deg):	(  -123.870,    -16.298     )
+Error Phi, Theta:		(     0.000,      0.598     )
+Error Phi, Theta (deg):		(     0.003,     34.282     )
+
+--------------------------------------------------
+
+t_start: 990.9999999999999ns
+error1: -8.110181025811055ns
+error2: 13.471606426167577ns
+error3: 1.0692342702447721ns
+error4: -15.359969908032273ns
+TX2toRX1_actual: 2574299.8300218703ns
+TX2toRX2_actual: 2708709.0440354557ns
+TX2toRX3_actual: 2578361.4690069836ns
+TX2toRX4_actual: 2619289.3770159576ns
+Solution:	(  -587.237,    359.670,    362.287    )
+Actual:		(  -596.000,    365.000,    368.000    )
+Error:		(     8.763,     -5.330,     -5.713    )
+Error distance: 11.740170804705766 meters
+Solution Phi, Theta:		(     2.592,      0.484     )
+Actual Phi, Theta:		(     2.592,      0.485     )
+Solution Phi, Theta (deg):	(   148.513,     27.749     )
+Actual Phi, Theta (deg):	(   148.516,     27.769     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.003,      0.020     )
+
+--------------------------------------------------
+
+t_start: 479.0ns
+error1: -2.90492322750032ns
+error2: -1.3485082953425571ns
+error3: -1.7658009883628927ns
+error4: -1.7094134245942738ns
+TX2toRX1_actual: 3475797.6018424467ns
+TX2toRX2_actual: 3372273.2537368797ns
+TX2toRX3_actual: 3432595.89833746ns
+TX2toRX4_actual: 3425690.6274415166ns
+Solution:	(   355.088,   -503.118,   -812.216    )
+Actual:		(   355.000,   -503.000,   -812.000    )
+Error:		(     0.088,     -0.118,     -0.216    )
+Error distance: 0.26150917052533135 meters
+Solution Phi, Theta:		(    -0.956,     -0.922     )
+Actual Phi, Theta:		(    -0.956,     -0.922     )
+Solution Phi, Theta (deg):	(   -54.787,    -52.831     )
+Actual Phi, Theta (deg):	(   -54.787,    -52.831     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.000,      0.001     )
+
+--------------------------------------------------
+
+t_start: 418.0ns
+error1: -10.999985843219838ns
+error2: -29.247275380092038ns
+error3: 10.294163443529817ns
+error4: -10.615990135101587ns
+TX2toRX1_actual: 4221333.546843006ns
+TX2toRX2_actual: 4086297.8514078152ns
+TX2toRX3_actual: 4150313.7804525006ns
+TX2toRX4_actual: 4151808.837805204ns
+Solution:	(   455.885,   -856.249,    788.178    )
+Actual:		(   456.000,   -857.000,    789.000    )
+Error:		(    -0.115,      0.751,     -0.822    )
+Error distance: 1.119744381475651 meters
+Solution Phi, Theta:		(    -1.082,      0.682     )
+Actual Phi, Theta:		(    -1.082,      0.682     )
+Solution Phi, Theta (deg):	(   -61.968,     39.094     )
+Actual Phi, Theta (deg):	(   -61.983,     39.103     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.015,      0.009     )
+
+--------------------------------------------------
+
+t_start: 896.0ns
+error1: -6.872680608669661ns
+error2: 0.8836557315590912ns
+error3: 3.7311421582015845ns
+error4: -12.637910161338981ns
+TX2toRX1_actual: 3191397.551131047ns
+TX2toRX2_actual: 3311262.172741037ns
+TX2toRX3_actual: 3144876.997182848ns
+TX2toRX4_actual: 3215052.3681632676ns
+Solution:	(  -915.328,    238.582,    -73.815    )
+Actual:		(  -929.000,    242.000,    -76.000    )
+Error:		(    13.672,     -3.418,      2.185    )
+Error distance: 14.261714773859056 meters
+Solution Phi, Theta:		(     2.887,     -0.078     )
+Actual Phi, Theta:		(     2.887,     -0.079     )
+Solution Phi, Theta (deg):	(   165.391,     -4.462     )
+Actual Phi, Theta (deg):	(   165.399,     -4.526     )
+Error Phi, Theta:		(     0.000,      0.001     )
+Error Phi, Theta (deg):		(     0.008,      0.064     )
+
+--------------------------------------------------
+
+t_start: 911.0ns
+error1: -3.1678973899584935ns
+error2: 2.7717601714343054ns
+error3: -10.842880584368146ns
+error4: 3.7396290039965563ns
+TX2toRX1_actual: 2217901.1325596077ns
+TX2toRX2_actual: 2065031.227691449ns
+TX2toRX3_actual: 2149533.7669898677ns
+TX2toRX4_actual: 2142731.3704145355ns
+Solution:	(   309.623,   -478.533,    313.655    )
+Actual:		(   308.000,   -476.000,    312.000    )
+Error:		(     1.623,     -2.533,      1.655    )
+Error distance: 3.433452336280797 meters
+Solution Phi, Theta:		(    -0.997,      0.503     )
+Actual Phi, Theta:		(    -0.996,      0.503     )
+Solution Phi, Theta (deg):	(   -57.096,     28.824     )
+Actual Phi, Theta (deg):	(   -57.095,     28.824     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.001,      0.000     )
+
+--------------------------------------------------
+
+t_start: 87.0ns
+error1: -0.38279813432411214ns
+error2: -0.5773312692019723ns
+error3: 9.661672709572427ns
+error4: -4.75306279442742ns
+TX2toRX1_actual: 2878446.081420975ns
+TX2toRX2_actual: 2978512.512406404ns
+TX2toRX3_actual: 2815258.5340647455ns
+TX2toRX4_actual: 2889788.2044958253ns
+Solution:	(  -811.510,    112.187,    269.999    )
+Actual:		(  -818.000,    113.000,    272.000    )
+Error:		(     6.490,     -0.813,     -2.001    )
+Error distance: 6.8400453230214895 meters
+Solution Phi, Theta:		(     3.004,      0.318     )
+Actual Phi, Theta:		(     3.004,      0.318     )
+Solution Phi, Theta (deg):	(   172.129,     18.241     )
+Actual Phi, Theta (deg):	(   172.135,     18.231     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.006,      0.010     )
+
+--------------------------------------------------
+
+t_start: 538.0ns
+error1: -5.683385987017795ns
+error2: -6.939532086120434ns
+error3: -5.954901581508489ns
+error4: -1.0856681036822526ns
+TX2toRX1_actual: 3039330.0499658235ns
+TX2toRX2_actual: 2907743.512121714ns
+TX2toRX3_actual: 2947241.5934676374ns
+TX2toRX4_actual: 2963595.2744300747ns
+Solution:	(   200.886,   -668.886,    565.419    )
+Actual:		(   200.000,   -666.000,    563.000    )
+Error:		(     0.886,     -2.886,      2.419    )
+Error distance: 3.8687154152860614 meters
+Solution Phi, Theta:		(    -1.279,      0.681     )
+Actual Phi, Theta:		(    -1.279,      0.681     )
+Solution Phi, Theta (deg):	(   -73.283,     38.993     )
+Actual Phi, Theta (deg):	(   -73.285,     38.995     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.002,      0.001     )
+
+--------------------------------------------------
+
+t_start: 882.0ns
+error1: -1.6653587104390517ns
+error2: -1.9792391194611416ns
+error3: 1.3569982227369664ns
+error4: 4.785152493206836ns
+TX2toRX1_actual: 2455298.340614301ns
+TX2toRX2_actual: 2490636.9623523033ns
+TX2toRX3_actual: 2612097.0684913695ns
+TX2toRX4_actual: 2518251.5013117087ns
+Solution:	(   538.696,    486.456,   -211.164    )
+Actual:		(   536.000,    484.000,   -210.000    )
+Error:		(     2.696,      2.456,     -1.164    )
+Error distance: 3.828193809558068 meters
+Solution Phi, Theta:		(     0.734,     -0.283     )
+Actual Phi, Theta:		(     0.734,     -0.283     )
+Solution Phi, Theta (deg):	(    42.083,    -16.221     )
+Actual Phi, Theta (deg):	(    42.082,    -16.214     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.001,      0.008     )
+
+--------------------------------------------------
+
+t_start: 503.0ns
+error1: -10.326419040218786ns
+error2: -16.653154816254354ns
+error3: -10.169230920814051ns
+error4: 8.355363561646946ns
+TX2toRX1_actual: 3083928.7956749974ns
+TX2toRX2_actual: 3247118.544745121ns
+TX2toRX3_actual: 3199045.0973899732ns
+TX2toRX4_actual: 3175859.1253523775ns
+Solution:	(  -274.676,    899.418,   -252.252    )
+Actual:		(  -268.000,    877.000,   -246.000    )
+Error:		(    -6.676,     22.418,     -6.252    )
+Error distance: 24.21166123113249 meters
+Solution Phi, Theta:		(     1.867,     -0.262     )
+Actual Phi, Theta:		(     1.867,     -0.262     )
+Solution Phi, Theta (deg):	(   106.982,    -15.015     )
+Actual Phi, Theta (deg):	(   106.992,    -15.016     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.010,      0.001     )
+
+--------------------------------------------------
+
+t_start: 165.0ns
+error1: -6.7606138936171645ns
+error2: -15.928806365010235ns
+error3: 2.2658226633325587ns
+error4: -1.9547169476975572ns
+TX2toRX1_actual: 3886316.81983985ns
+TX2toRX2_actual: 3817384.2660283344ns
+TX2toRX3_actual: 3717792.588953347ns
+TX2toRX4_actual: 3806477.8623579396ns
+Solution:	(  -653.623,   -911.530,   -241.050    )
+Actual:		(  -649.000,   -905.000,   -239.000    )
+Error:		(    -4.623,     -6.530,     -2.050    )
+Error distance: 8.259819414510375 meters
+Solution Phi, Theta:		(    -2.193,     -0.212     )
+Actual Phi, Theta:		(    -2.193,     -0.211     )
+Solution Phi, Theta (deg):	(  -125.643,    -12.129     )
+Actual Phi, Theta (deg):	(  -125.645,    -12.112     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.002,      0.016     )
+
+--------------------------------------------------
+
+t_start: 35.0ns
+error1: 1.0681349056194211ns
+error2: 9.828922141524481ns
+error3: 9.67874478795838ns
+error4: -1.984126325826336ns
+TX2toRX1_actual: 3116234.3769186265ns
+TX2toRX2_actual: 2965228.497205367ns
+TX2toRX3_actual: 2976709.918793368ns
+TX2toRX4_actual: 3018512.714890509ns
+Solution:	(    58.408,   -874.309,   -177.038    )
+Actual:		(    59.000,   -883.000,   -179.000    )
+Error:		(    -0.592,      8.691,      1.962    )
+Error distance: 8.929182215840962 meters
+Solution Phi, Theta:		(    -1.504,     -0.199     )
+Actual Phi, Theta:		(    -1.504,     -0.200     )
+Solution Phi, Theta (deg):	(   -86.178,    -11.422     )
+Actual Phi, Theta (deg):	(   -86.177,    -11.435     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.001,      0.013     )
+
+--------------------------------------------------
+
+t_start: 912.0ns
+error1: -10.831445858140874ns
+error2: -17.78210603445637ns
+error3: -10.168521120671581ns
+error4: -0.9696989431424882ns
+TX2toRX1_actual: 2892859.1075260225ns
+TX2toRX2_actual: 3045706.125451011ns
+TX2toRX3_actual: 3040956.7931594066ns
+TX2toRX4_actual: 2992342.2371761096ns
+Solution:	(   -25.319,    905.139,    102.539    )
+Actual:		(   -25.000,    892.000,    102.000    )
+Error:		(    -0.319,     13.139,      0.539    )
+Error distance: 13.153685490578079 meters
+Solution Phi, Theta:		(     1.599,      0.113     )
+Actual Phi, Theta:		(     1.599,      0.114     )
+Solution Phi, Theta (deg):	(    91.602,      6.461     )
+Actual Phi, Theta (deg):	(    91.605,      6.521     )
+Error Phi, Theta:		(     0.000,      0.001     )
+Error Phi, Theta (deg):		(     0.003,      0.060     )
+
+--------------------------------------------------
+
+t_start: 730.0ns
+error1: -4.829375006071503ns
+error2: 9.97017897211202ns
+error3: -7.413618614360857ns
+error4: 1.373303504044276ns
+TX2toRX1_actual: 3898642.5404479066ns
+TX2toRX2_actual: 3855351.700013452ns
+TX2toRX3_actual: 3780392.380798158ns
+TX2toRX4_actual: 3843803.4678548737ns
+Solution:	(  -496.174,   -622.269,    846.739    )
+Actual:		(  -495.000,   -621.000,    845.000    )
+Error:		(    -1.174,     -1.269,      1.739    )
+Error distance: 2.452347272003645 meters
+Solution Phi, Theta:		(    -2.244,      0.816     )
+Actual Phi, Theta:		(    -2.244,      0.816     )
+Solution Phi, Theta (deg):	(  -128.568,     46.774     )
+Actual Phi, Theta (deg):	(  -128.558,     46.777     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.009,      0.003     )
+
+--------------------------------------------------
+
+t_start: 910.0ns
+error1: 0.14489934287266426ns
+error2: -4.773078238548262ns
+error3: 4.035853216609914ns
+error4: -8.376303189150821ns
+TX2toRX1_actual: 3513046.611988654ns
+TX2toRX2_actual: 3603809.2202637494ns
+TX2toRX3_actual: 3452225.4069515397ns
+TX2toRX4_actual: 3522156.3476162665ns
+Solution:	(  -916.420,    110.023,    502.468    )
+Actual:		(  -925.000,    111.000,    507.000    )
+Error:		(     8.580,     -0.977,     -4.532    )
+Error distance: 9.75231321487534 meters
+Solution Phi, Theta:		(     3.022,      0.499     )
+Actual Phi, Theta:		(     3.022,      0.498     )
+Solution Phi, Theta (deg):	(   173.154,     28.563     )
+Actual Phi, Theta (deg):	(   173.157,     28.555     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.003,      0.008     )
+
+--------------------------------------------------
+
+t_start: 870.0ns
+error1: -8.811973825668252ns
+error2: 2.58785617190727ns
+error3: -7.68140337458553ns
+error4: -6.042935460383449ns
+TX2toRX1_actual: 3060491.150129595ns
+TX2toRX2_actual: 3208030.7189914114ns
+TX2toRX3_actual: 3110862.2589173485ns
+TX2toRX4_actual: 3125459.4075466963ns
+Solution:	(  -530.268,    616.113,    473.178    )
+Actual:		(  -531.000,    617.000,    474.000    )
+Error:		(     0.732,     -0.887,     -0.822    )
+Error distance: 1.413537851129214 meters
+Solution Phi, Theta:		(     2.281,      0.527     )
+Actual Phi, Theta:		(     2.281,      0.527     )
+Solution Phi, Theta (deg):	(   130.718,     30.204     )
+Actual Phi, Theta (deg):	(   130.716,     30.212     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.002,      0.008     )
+
+--------------------------------------------------
+
+t_start: 365.0ns
+error1: -14.26131442415039ns
+error2: 10.931762540463252ns
+error3: 3.0503226297650583ns
+error4: -1.3068933179527995ns
+TX2toRX1_actual: 2840294.285372311ns
+TX2toRX2_actual: 2805893.6662366437ns
+TX2toRX3_actual: 2968883.6665663486ns
+TX2toRX4_actual: 2870803.5736848977ns
+Solution:	(   812.854,    275.751,    -33.697    )
+Actual:		(   814.000,    276.000,    -34.000    )
+Error:		(    -1.146,     -0.249,      0.303    )
+Error distance: 1.2114226869260447 meters
+Solution Phi, Theta:		(     0.327,     -0.039     )
+Actual Phi, Theta:		(     0.327,     -0.040     )
+Solution Phi, Theta (deg):	(    18.739,     -2.248     )
+Actual Phi, Theta (deg):	(    18.730,     -2.265     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.009,      0.017     )
+
+--------------------------------------------------
+
+t_start: 787.0ns
+error1: 2.819095764612021ns
+error2: 11.520671819368102ns
+error3: -11.575884629619125ns
+error4: -6.019463803208662ns
+TX2toRX1_actual: 2879342.72980523ns
+TX2toRX2_actual: 2733679.3903664155ns
+TX2toRX3_actual: 2760827.076549893ns
+TX2toRX4_actual: 2790205.6117965765ns
+Solution:	(   128.053,   -737.310,   -351.601    )
+Actual:		(   129.000,   -742.000,   -354.000    )
+Error:		(    -0.947,      4.690,      2.399    )
+Error distance: 5.352425340331018 meters
+Solution Phi, Theta:		(    -1.399,     -0.439     )
+Actual Phi, Theta:		(    -1.399,     -0.439     )
+Solution Phi, Theta (deg):	(   -80.147,    -25.166     )
+Actual Phi, Theta (deg):	(   -80.137,    -25.175     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.010,      0.009     )
+
+--------------------------------------------------
+
+t_start: 767.0ns
+error1: -10.81111550464604ns
+error2: -12.474049315273236ns
+error3: -15.491615974821261ns
+error4: 9.685803460566367ns
+TX2toRX1_actual: 3085669.120732324ns
+TX2toRX2_actual: 2994962.0063752243ns
+TX2toRX3_actual: 2917318.1132405372ns
+TX2toRX4_actual: 2998435.9630096825ns
+Solution:	(  -407.609,   -800.427,   -200.459    )
+Actual:		(  -397.000,   -780.000,   -195.000    )
+Error:		(   -10.609,    -20.427,     -5.459    )
+Error distance: 23.656039101840953 meters
+Solution Phi, Theta:		(    -2.042,     -0.220     )
+Actual Phi, Theta:		(    -2.042,     -0.219     )
+Solution Phi, Theta (deg):	(  -116.987,    -12.581     )
+Actual Phi, Theta (deg):	(  -116.975,    -12.560     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.012,      0.020     )
+
+--------------------------------------------------
+
+t_start: 603.0ns
+error1: 9.20685293545246ns
+error2: 5.199278318378696ns
+error3: 7.7380881289661225ns
+error4: 25.345458571592935ns
+TX2toRX1_actual: 1506752.3410163734ns
+TX2toRX2_actual: 1570655.0265062393ns
+TX2toRX3_actual: 1434442.6835064476ns
+TX2toRX4_actual: 1501648.4273855833ns
+Solution:	(  -356.782,     -8.108,   -270.210    )
+Actual:		(  -354.000,     -8.000,   -268.000    )
+Error:		(    -2.782,     -0.108,     -2.210    )
+Error distance: 3.554310649851929 meters
+Solution Phi, Theta:		(    -3.119,     -0.648     )
+Actual Phi, Theta:		(    -3.119,     -0.648     )
+Solution Phi, Theta (deg):	(  -178.698,    -37.131     )
+Actual Phi, Theta (deg):	(  -178.705,    -37.121     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.007,      0.010     )
+
+--------------------------------------------------
+
+t_start: 38.0ns
+error1: -20.35897684186564ns
+error2: -11.801308490985408ns
+error3: -12.52987681233185ns
+error4: -4.868062314645227ns
+TX2toRX1_actual: 3565605.917726121ns
+TX2toRX2_actual: 3548159.772854955ns
+TX2toRX3_actual: 3696593.0160503066ns
+TX2toRX4_actual: 3602672.231239728ns
+Solution:	(   942.004,    418.363,   -356.887    )
+Actual:		(   930.000,    413.000,   -352.000    )
+Error:		(    12.004,      5.363,     -4.887    )
+Error distance: 14.026350561249854 meters
+Solution Phi, Theta:		(     0.418,     -0.333     )
+Actual Phi, Theta:		(     0.418,     -0.333     )
+Solution Phi, Theta (deg):	(    23.947,    -19.098     )
+Actual Phi, Theta (deg):	(    23.945,    -19.081     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.002,      0.017     )
+
+--------------------------------------------------
+
+t_start: 568.0ns
+error1: 2.8606858256410477ns
+error2: -4.3100775031747816ns
+error3: 5.245463725146734ns
+error4: -2.4807895541154203ns
+TX2toRX1_actual: 2341426.324590055ns
+TX2toRX2_actual: 2300940.4377104496ns
+TX2toRX3_actual: 2207061.3623522655ns
+TX2toRX4_actual: 2281642.854411316ns
+Solution:	(  -365.051,   -398.031,   -406.999    )
+Actual:		(  -366.000,   -399.000,   -408.000    )
+Error:		(     0.949,      0.969,      1.001    )
+Error distance: 1.6857610153368774 meters
+Solution Phi, Theta:		(    -2.313,     -0.646     )
+Actual Phi, Theta:		(    -2.313,     -0.646     )
+Solution Phi, Theta (deg):	(  -132.525,    -37.001     )
+Actual Phi, Theta (deg):	(  -132.530,    -37.000     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.005,      0.001     )
+
+--------------------------------------------------
+
+t_start: 208.0ns
+error1: 8.914009808270489ns
+error2: 2.2294597158401106ns
+error3: -4.762549013705829ns
+error4: 11.85990534460869ns
+TX2toRX1_actual: 3183347.7271558214ns
+TX2toRX2_actual: 3029936.161544183ns
+TX2toRX3_actual: 3107556.940696559ns
+TX2toRX4_actual: 3105966.5372413225ns
+Solution:	(   416.120,   -721.153,   -427.256    )
+Actual:		(   412.000,   -714.000,   -423.000    )
+Error:		(     4.120,     -7.153,     -4.256    )
+Error distance: 9.287632161323685 meters
+Solution Phi, Theta:		(    -1.047,     -0.474     )
+Actual Phi, Theta:		(    -1.047,     -0.474     )
+Solution Phi, Theta (deg):	(   -60.014,    -27.165     )
+Actual Phi, Theta (deg):	(   -60.014,    -27.164     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.000,      0.001     )
+
+--------------------------------------------------
+
+t_start: 707.0ns
+error1: -3.3105339622841226ns
+error2: -17.633013086887825ns
+error3: 16.09264806132523ns
+error4: 10.106500167018616ns
+TX2toRX1_actual: 4137107.542620641ns
+TX2toRX2_actual: 4030770.833605899ns
+TX2toRX3_actual: 4131214.4239298645ns
+TX2toRX4_actual: 4098766.6155173527ns
+Solution:	(   718.222,   -463.771,   -894.047    )
+Actual:		(   709.000,   -458.000,   -883.000    )
+Error:		(     9.222,     -5.771,    -11.047    )
+Error distance: 15.504454623513748 meters
+Solution Phi, Theta:		(    -0.573,     -0.808     )
+Actual Phi, Theta:		(    -0.574,     -0.808     )
+Solution Phi, Theta (deg):	(   -32.851,    -46.281     )
+Actual Phi, Theta (deg):	(   -32.862,    -46.291     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.011,      0.011     )
+
+--------------------------------------------------
+
+t_start: 146.0ns
+error1: -4.883492527596181ns
+error2: 0.6249070304443347ns
+error3: 6.393762309783568ns
+error4: -5.7201261080911285ns
+TX2toRX1_actual: 3275680.8459075973ns
+TX2toRX2_actual: 3201244.1775707267ns
+TX2toRX3_actual: 3371709.102108648ns
+TX2toRX4_actual: 3282094.3473446276ns
+Solution:	(   961.087,     77.474,    160.400    )
+Actual:		(   969.000,     78.000,    162.000    )
+Error:		(    -7.913,     -0.526,     -1.600    )
+Error distance: 8.090002222958242 meters
+Solution Phi, Theta:		(     0.080,      0.165     )
+Actual Phi, Theta:		(     0.080,      0.165     )
+Solution Phi, Theta (deg):	(     4.609,      9.445     )
+Actual Phi, Theta (deg):	(     4.602,      9.461     )
+Error Phi, Theta:		(     0.000,      0.000     )
+Error Phi, Theta (deg):		(     0.007,      0.016     )
+
+--------------------------------------------------
+
